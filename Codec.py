@@ -10,14 +10,11 @@ class Codec(object):
 
     """
     def __init__(self, *args, **kwargs):
-
         self._string=""
         self._inputsize=0
         self._probrangedict ={}
         self._probrange=[]
-   
-
-    
+        
     def set_string(self,string):
         """
         This methods gets the strings and enters it to the encoder
@@ -30,7 +27,6 @@ class Codec(object):
             self._string+="$"
 
         self._inputsize= len(self._string)
-
 
     def generate_probranges(self):
         
